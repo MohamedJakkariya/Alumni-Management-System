@@ -13,7 +13,7 @@ body{
  align-items: center;
  font-family: 'Gudea', sans-serif;
  /* background:linear-gradient(to right, white,rgb(111, 112, 114)); */
- background: url('/Assets/img/bg-5.jpg');
+ background: url("/Assets/img/bg-5.jpg");
  background-size: cover;
 }
 
