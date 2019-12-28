@@ -103,3 +103,11 @@ body{
 .container .sign-up{
  color: white;
 }
+
+@media (max-width : 600px){
+ .container{
+  width: 100vw;
+  margin: 1rem;
+  height: auto;
+ }
+}
