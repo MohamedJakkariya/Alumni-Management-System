@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Gudea:400,700&display=swap&subset=latin-ext');
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ display: flex;
+ justify-content: center;
+ height: 200vh;
+ align-items: center;
+ font-family: 'Gudea', sans-serif;
+ background: url("/Assets/img/bg-5.jpg");
+ background-size: cover;
+}
+
+span{
+ color: white;
+ background: rgb(75, 76, 82);
+ padding: .5rem 0.1rem 1rem 0.3rem;
+ border-bottom: 1px solid rgba(248, 231, 231, 0.1);
+}
+
+.container{
+ width:320px;
+ margin: 1rem;
+ /* height: 400px; */
+ background-color: #34363e;
+ box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+ border-radius: 3px;
+}
+
+.container .inp{
+  display: flex;
+}
+
+.container input{
+ height: 2.5rem;
+ color: white;
+ width: 100%;
+ box-shadow: 1px 1px solid rgba(179, 175, 175, 0.5);
+}
+
+.container input[type = "text"],input[type = "password"],.container input[type = "email"],
+.container input[type = "date"],input[type = "number" ]{
+ background: rgb(75, 76, 82);
+ padding: 1.5rem;
+
+ border: none;
+ outline: none;
+ border-bottom: 1px solid rgba(248, 231, 231, 0.1);
+}
+
+.container input[type = "date"]{
+ color: rgba(179, 175, 175, 0.5);
+}
+
+.container button{
+ width: 100px;
+ text-align: center;
+ cursor: pointer;
+ height: 30px;
+ position: relative;
+ right: 1rem;
+ bottom: 1rem;
+ width: 120px;
+ font-weight: 700;
+ margin: 2rem 1.4rem 1.5rem 2rem;
+ font-size: 0.9rem;
+ border-radius: 20px;
+ outline: none;
+ background: none;
+ border: 1px solid white;
+ color: white;
+ text-transform: capitalize;
+}
+
+
+.container button:hover,.container button:focus{
+ background-color: white;
+ color: #34363E;
+}
+
+@media (max-width : 600px){
+ .container{
+  width: 100vw;
+  margin: 1rem;
+  height: auto;
+ }
+} 
