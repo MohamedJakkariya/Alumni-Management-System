@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=
+ , initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Demo</title>
+ <link rel="stylesheet" href="demo.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Multi progressbar indicator  -->
+  <div class="progressbar">
+   <span class="first"></span>
+   <span class="second"></span>
+   <!-- <span class="split">2</span> --> 
+   <!-- <span><hr class="first"><hr class="second"></span> -->
+  </div>
+  <button type="button" id="btn-1">click</button>
+  <button type="button" id="btn-2">click</button>
+
+  <p>paragraph</p>
+
+  <script>
+   $('#btn-1').on('click', function () {
+    $('.first').toggleClass('fill-1');
+   });
+   $('#btn-2').on('click', function () {
+     $('.second').toggleClass('fill-2');
+    });
+  </script>
+</body>
+</html>

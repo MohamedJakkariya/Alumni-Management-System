@@ -7,13 +7,13 @@
 }
 
 body{
- display: flex;
- justify-content: center;
- height: 200vh;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  font-family: 'Gudea', sans-serif;
  background: url("/Assets/img/bg-5.jpg");
  background-size: cover;
+ background-repeat: no-repeat;
 }
 
 span{
@@ -25,11 +25,18 @@ span{
 
 .container{
  width:320px;
- margin: 1rem;
- /* height: 400px; */
+ background: transparent;
  background-color: #34363e;
  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
  border-radius: 3px;
+}
+
+#account-info{
+ margin: 6rem auto 1rem auto;
+}
+
+#personal-info{
+  margin: 1rem auto;
 }
 
 .container .inp{
@@ -37,7 +44,6 @@ span{
 }
 
 .container input{
- height: 2.5rem;
  color: white;
  width: 100%;
  box-shadow: 1px 1px solid rgba(179, 175, 175, 0.5);
@@ -46,16 +52,38 @@ span{
 .container input[type = "text"],input[type = "password"],.container input[type = "email"],
 .container input[type = "date"],input[type = "number" ]{
  background: rgb(75, 76, 82);
- padding: 1.5rem;
+ padding: 1rem;
 
  border: none;
  outline: none;
  border-bottom: 1px solid rgba(248, 231, 231, 0.1);
 }
 
+input[type = "number" ]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+input[type = "date"]::-webkit-clear-button{
+  display: none;
+}
+
 .container input[type = "date"]{
  color: rgba(179, 175, 175, 0.5);
 }
+
+.container input[type="date"]::-webkit-calendar-picker-indicator {
+  font-size: 15px;
+  color: white;
+  background-color: #34363E;
+  padding: 5px;
+}
+input[type = "date"]::-webkit-inner-spin-button { display: none; }
+
+/* To style the date input  */
+/* ::-webkit-datetime-edit-text { padding: 0 2rem; } */
+/* ::-webkit-datetime-edit-month-field { text-transform: uppercase; } */
+/* ::-webkit-datetime-edit-day-field { text-transform: uppercase; } */
+/* ::-webkit-datetime-edit-year-field { text-transform: uppercase; } */
 
 .container button{
  width: 100px;
@@ -67,7 +95,7 @@ span{
  bottom: 1rem;
  width: 120px;
  font-weight: 700;
- margin: 2rem 1.4rem 1.5rem 2rem;
+ margin: 2rem 1.4rem 1.5rem 7rem;
  font-size: 0.9rem;
  border-radius: 20px;
  outline: none;
@@ -77,16 +105,102 @@ span{
  text-transform: capitalize;
 }
 
-
 .container button:hover,.container button:focus{
  background-color: white;
- color: #34363E;
+ color: #34363e;
 }
+
+ .progressbar{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%,20%);
+  display: flex;
+  background: transparent;
+ }
+
+ .progressbar span::before,span::after{
+  padding-top: 5px;
+ }
+
+ .first,.second{
+  position: relative;
+  height: 5px;
+  display: block;
+  left: 30%;
+  top: 20%;
+  transform: translate(-65%,-50%);
+  padding-left:1.8rem;
+  padding-bottom: 1.4rem;
+  width: 150px;
+  font-size: 1rem;
+  margin-bottom: 2.7rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  /* background: #27AE60; */
+  background: #34363e;
+ }
+
+ .first::before,.second::before{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 26px;
+  left: 0;
+  top: 0.6rem;
+  z-index: 1;
+  color: #34363E;
+  background: white;
+  text-align: center;
+  margin-top:-10px ;
+ }
+
+ .first::before{
+  content: '1';
+  left: -10px;
+ }
+
+ .second::before{
+  content: '2';
+  left: -10px;
+ }
+
+ .first{
+   padding-left: 1.5rem;
+ }
+
+ .second::after{
+  text-align: center;
+
+  content: '3';
+  position: absolute;
+  width: 25px;
+  right: -20px;
+  height: 26px;
+  color: #34363E;
+  top: 0.6rem;
+  background: white;
+  margin-top:-10px ;
+ }
+ .first.fill-1, .first.fill-1::before,.second.fill-2, .second.fill-2::before{
+  background: #27AE60;
+  color: white;
+ }
+
+ a{
+   color: white;
+   text-decoration: none;
+ }
+ button:hover a{
+   color: #34363E;
+ }
 
 @media (max-width : 600px){
  .container{
-  width: 100vw;
-  margin: 1rem;
+  width: 90vw;
+overflow-x: hidden;
+
+  margin: auto;
   height: auto;
  }
 } 

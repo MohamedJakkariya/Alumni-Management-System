@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <!-- Link for Sign up StyleSheet -->
+ <link rel="stylesheet" href="./sign_up.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <title>Sign up</title>
+</head>
+
+<body>
+
+ <!-- Multi progressbar indicator  -->
+ <div class="progressbar">
+  <span class="first" style="
+  color: white;">Account Info</span>
+  <span class="second">Personal Info</span>
+ </div>
+
+ <!-- Form details -->
+ <form action="#">
+  <!-- Getting Account information -->
+  <div class="container" id="account-info">
+   <input type="text" name="Username" id="username" placeholder="Username" autocomplete="username" required>
+   <input type="email" name="Email" id="email" placeholder="Email" required>
+   <input type="password" name="Password" id="password" placeholder="Password" required>
+   <input type="password" name="Re-Password" id="re-password" placeholder="Conform Password" required>
+  </div>
+
+  <!-- Getting Personal information  -->
+  <div class="container" id="personal-info">
+
+   <div class="inp">
+    <span>*</span><input type="text" name="First_Name" id="first-name" placeholder="First Name" required>
+   </div>
+
+   <div class="inp">
+    <span>*</span><input type="text" name="Second_Name" id="second-name" placeholder="Second Name">
+   </div>
+
+   <div class="inp">
+    <span>*</span><input type="number" name="Reg_number" id="reg-num" placeholder="Register Number">
+   </div>
+
+
+   <div class="inp">
+    <span>*</span><input type="number" name="Phone" id="phone" placeholder="Phone No +91" required>
+   </div>
+
+   <div class="ug">
+
+    <div class="inp">
+     <span>*</span><input type="text" name="Ug_course" id="ug-course" placeholder="UG Course Name" required>
+    </div>
+
+    <div class="inp">
+     <span>*</span><input type="date" name="Year_of_uf" id="year-of-ug" required>
+    </div>
+   </div>
+
+   <div class="pg">
+    <input type="text" name="Pg_course" id="pg-course" placeholder="PG Course Name">
+    <input type="date" name="Year_of_pg" id="year-of-pg">
+   </div>
+
+   <div class="research">
+    <input type="text" name="Research" id="research" placeholder="Research Name">
+    <input type="date" name="Research-date" id="research-date">
+   </div>
+
+
+   <div class="inp">
+    <span>*</span><input type="text" name="Designation" id="designation" required placeholder="Designation">
+   </div>
+
+   <div class="inp">
+    <span>*</span><input type="text" name="Country_of_residence" id="country-of-residence"
+     placeholder="Country of Residence" required>
+   </div>
+
+   <div class="inp">
+    <span>*</span><input type="text" name="City" id="city" placeholder="City" required>
+   </div>
+
+   <div class="btn">
+    <button type="submit" id="submit">Submit</button>
+   </div>
+  </div>
+ </form>
+
+ <script src="./sign_up.js"></script>
+</body>
+
+</html>
