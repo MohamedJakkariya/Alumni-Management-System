@@ -53,14 +53,39 @@
    <div class="ug">
 
     <div class="inp">
-     <span>*</span><input type="text" name="Ug_course" id="ug-course" placeholder="UG Course Name" required>
+     <span>*</span><input type="text" list="ug-name" name="Ug_course" id="ug-course" placeholder="UG Course Name" required>
     </div>
+
+    <datalist id="ug-name">
+      <option value="B.E.Computer Science And Engineering"></option>
+      <option value="B.E.Civil Engineering"></option>
+      <option value="B.E.Electrical And Electronic Engineering"></option>
+      <option value="B.E.Mechanical Engineering"></option>
+      <option value="B.E.Information Technology"></option>
+      <option value="B.E.Aeronautical Engineering"></option>
+      <option value="B.E.Electronics and Communication Engineering"></option>
+      <option value="B.E.Electronics and Instrumentation Engineering"></option>
+      <option value="B.E.Mechatronics Engineering"></option>
+      <option value="B.E.Automobile Engineering"></option>
+      <option value="B.E.Chemical Engineering"></option>
+      <option value="B.E.Biotechnology"></option>
+      <option value="B.E.Biomedical Engineering"></option>
+    </datalist>
+
 
     <div class="inp">
      <span>*</span><input type="date" name="Year_of_uf" id="year-of-ug" required placeholder="dd-mm-yyyy" pattern="####-##-##">
     </div>
    </div>
 
+    <div class="inp">
+      <span>*</span><input type="text" list="college-name" name="College" id="College" required placeholder="College Name">
+    </div>
+
+    <datalist id="college-name">
+      <option value="University College of Engineering(BIT campus)"></option>
+      <option value="Anna University(CEG campus)"></option>
+    </datalist>
    <div class="pg">
     <input type="text" name="Pg_course" id="pg-course" placeholder="PG Course Name">
     <input type="date" name="Year_of_pg" id="year-of-pg">
@@ -75,6 +100,10 @@
    <div class="inp">
     <span>*</span><input type="text" name="Designation" id="designation" required placeholder="Designation">
    </div>
+
+  <div class="inp">
+    <input type="text" name="Working_company" id="working-company"  placeholder="Currently Working Company">
+  </div>
 
    <div class="inp">
     <span>*</span><input type="text" name="Country_of_residence" id="country-of-residence"
