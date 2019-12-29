@@ -11,10 +11,31 @@ body{
   justify-content: center;
   align-items: center;
  font-family: 'Gudea', sans-serif;
- background: url("/Assets/img/bg-5.jpg");
- background-size: cover;
- background-repeat: no-repeat;
+ background: #b2dffb
 }
+
+h1{
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  line-height: 1.4rem;
+  padding: 10px 10px;
+  font-weight: 400  ;
+}
+
+.input-flex{
+  display: flex;
+}
+
+i{
+  color: rgb(146, 145, 145);
+  padding: 1rem;
+  background-color: rgb(75, 76, 82);
+  border-bottom: 1px solid rgb(75,76,82);
+}
+
 
 span{
  color: white;
@@ -23,20 +44,15 @@ span{
  border-bottom: 1px solid rgba(248, 231, 231, 0.1);
 }
 
+#personal-info,#account-info{
+  margin: 1rem auto;
+}
 .container{
  width:320px;
  background: transparent;
  background-color: #34363e;
  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
  border-radius: 3px;
-}
-
-#account-info{
- margin: 6rem auto 1rem auto;
-}
-
-#personal-info{
-  margin: 1rem auto;
 }
 
 .container .inp{
