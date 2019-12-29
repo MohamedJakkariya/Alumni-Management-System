@@ -44,7 +44,7 @@ span{
 }
 
 .container input{
- color: white;
+ color: rgb(246, 241, 241);
  width: 100%;
  box-shadow: 1px 1px solid rgba(179, 175, 175, 0.5);
 }
@@ -53,7 +53,6 @@ span{
 .container input[type = "date"],input[type = "number" ]{
  background: rgb(75, 76, 82);
  padding: 1rem;
-
  border: none;
  outline: none;
  border-bottom: 1px solid rgba(248, 231, 231, 0.1);
@@ -68,7 +67,7 @@ input[type = "date"]::-webkit-clear-button{
 }
 
 .container input[type = "date"]{
- color: rgba(179, 175, 175, 0.5);
+ color: rgba(253, 252, 252, 0.74);
 }
 
 .container input[type="date"]::-webkit-calendar-picker-indicator {
@@ -114,6 +113,7 @@ input[type = "date"]::-webkit-inner-spin-button { display: none; }
   position: absolute;
   top: 50px;
   left: 50%;
+  height: 50px;
   transform: translate(-50%,20%);
   display: flex;
   background: transparent;
