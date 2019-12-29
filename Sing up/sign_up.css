@@ -139,6 +139,7 @@ input[type = "date"]::-webkit-inner-spin-button { display: none; }
   /* text-transform: uppercase; */
   /* background: #27AE60; */
   background: #34363e;
+  z-index: 1;
  }
 
  .first::before,.second::before{
