@@ -25,6 +25,12 @@ h1{
   font-weight: 400  ;
 }
 
+.indicator{
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
 .input-flex{
   display: flex;
 }
