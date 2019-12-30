@@ -35,6 +35,16 @@ var home_town_input = document.getElementById('home-town');
 var home_town_check = document.getElementById('home-town-check');
 var submit_button = document.getElementById('form');
 
+
+// Show other text area when input clicked 
+var others_input = document.getElementById('others');
+var other_skill_text_area = document.getElementById('other-skills');
+
+others_input.addEventListener('change',() => {
+  other_skill_text_area.style.display = "unset";
+});
+
+
 //Submit check
 submit_button.addEventListener("submit",() => {
   if(pass_input.value === re_pass_input.value)
@@ -163,3 +173,4 @@ re_pass_input.addEventListener("focus", () => {
   user.style.color = "#ada8a8";
   email.style.color = "#ada8a8";
 });
+
