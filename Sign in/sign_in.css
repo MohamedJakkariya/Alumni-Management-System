@@ -155,8 +155,9 @@ nav{
 
 @media (max-width : 600px){
  .cont{
-  /* width: 100vw; */
-  margin: 1rem;
+  /* width: 90%; */
+
+  margin: 2rem;
   height: auto;
  }
  .nav-item .nav-link{
