@@ -62,8 +62,22 @@ img{
  
 .nav-item .nav-link{
  margin: 0 15px;
- /* display: block; */
- /* width: 100%; */
+ display: block;
+ width: 100%;
  padding: 1rem 2rem;
+}
+
+.fa-sign-in{
+ padding: 10px;
+}
+
+.navbar-header{
+ margin: 0 0 0 2rem;
+ width: 250px;
+}
+
+.navbar-header h2{
+ margin: 0;
+ font-size: 0.9rem;
 }
 }
