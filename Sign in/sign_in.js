@@ -6,12 +6,12 @@ var pass_input = document.getElementById('password');
 console.log(user_input);
 
 user_input.addEventListener("focus",() => {
- user.style.color = "white";
+ user.style.color = "black";
  pass.style.color = "#ada8a8";
 
 });
 
 pass_input.addEventListener("focus", () => {
-  pass.style.color = "white";
+  pass.style.color = "black";
   user.style.color = "#ada8a8";
 });

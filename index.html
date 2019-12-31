@@ -14,45 +14,89 @@
  
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+  <!-- Fotorama -->
+  <link href="/Assets/plugin/fotorama-4.6.2/fotorama.css" rel="stylesheet">
+  <script src="/Assets/plugin/fotorama-4.6.2/fotorama.js"></script>
+
  <!-- Link for stylesheet -->
- <link rel="stylesheet" href="./index.css">
+ <link rel="stylesheet" href="/index.css">
+ <script src="https://kit.fontawesome.com/e2169f0192.js"></script>
  <title>Home</title>
 </head>
 <body>
 
- <nav class="navbar bg-dark navbar-dark navbar-expand">
+ <nav class="navbar navbar-inverse navbar-expand-lg">
+  <div class = "container-fluid">
+  <!-- Toggle button  -->
+  <button class="navbar-toggler" type="button" data-toggle = "collapse" data-target="#links">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+
   <!-- Brand  -->
-  <h1 class="nav-brand text-light">
-   Alumni Tracking System
-  </h1>
+  <div class="navbar-header">
+   <a href="#">
+    <img src="./Assets/img/logo_of_goa.png" alt="Goa logo" class="navbar-brand">
+    <h2 class="text-dark navbar-brand pt-3">University college of GOA</h2>
+   </a>
+  </div>
+
  <!-- Links -->
-  <ul class="navbar-nav pl-5">
-   <li class="nav-item">
-    <a href="./Sign in/sign_in.html" class="nav-link">Sign in</a>
+ <div class="navbar-collapse collapse" id="links">
+  <ul class="nav navbar-nav pl-5">
+   <li class=" nav-item">
+    <a href="#" class="nav-link active">Home</a>
    </li>
-   <li class="nav-item">
-    <a href="./Sing up/sign_ups.html" class="nav-link">Sign Up</a>
+
+   <li class=" nav-item">
+    <a href="#" class="nav-link">
+      <span class = "fa fa-sign-in"></span>
+      Directorate Login
+    </a>
+   </li>
+
+   <li class=" nav-item">
+    <a href="#" class="nav-link">
+      <span class="fa fa-sign-in"></span>
+      College Login
+    </a>
+   </li>
+
+   <li class=" nav-item">
+    <a href="/Sign in/sign_in.html" class="nav-link">
+      <span class="fa fa-sign-in"></span>
+      Alumni Login
+    </a>
+   </li>
+
+   <li class=" nav-item">
+    <a href="#" class="nav-link nav-button text-white " type="button">Events</a>
    </li>
   </ul>
+ </div>
+ </div>
  </nav>
 
- <div class="container">
-  <h2 class=" text-center p-5">Home For navigation</h2>
-  <p>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eaque maiores consectetur at suscipit nihil voluptas, nemo nam cupiditate fuga quae, eligendi deserunt. Maxime nesciunt eveniet est voluptas a distinctio, sed repellendus enim velit, ipsum exercitationem expedita soluta quos. Natus est ut ab vitae incidunt harum hic ea suscipit explicabo libero? Necessitatibus itaque quia aut sint fugiat maiores facilis, commodi modi tenetur cum, dicta ratione impedit, beatae temporibus culpa esse sunt qui repudiandae recusandae. Modi, alias veritatis! Eius excepturi impedit suscipit voluptatum doloremque dolore tempore ab mollitia et officia quidem recusandae, ducimus quo nobis maiores blanditiis officiis eum at soluta inventore corrupti ex est sit facere! Enim mollitia praesentium, animi veniam cumque perspiciatis voluptatibus unde aut culpa commodi, nostrum vero delectus incidunt sint sequi perferendis temporibus quod. Vero accusantium qui delectus harum modi, provident alias ullam praesentium, possimus, dolorem commodi quasi a numquam officiis tempora itaque? Sequi quam sapiente error?
-  </p>
+<!-- Fotorama -->
+<div class="fotorama" 
+    data-width="100%"
+    data-height = "70%"
+    data-ratio="800/600"
+    data-fit = "scaledown"
+    data-loop = "true"
+    data-autoplay = "2500"
+    data-transition = "crossfade"
+    data-clicktransition="crossfade"
+>
+  <img src="./Assets/img/Alumni/logo-1.jpg">
+  <img src="./Assets/img/Alumni/logo.jpg">
+  <img src="/Assets/img/Alumni/photo-7.jpeg">
+  <img src="./Assets/img/Alumni/photo-1.jpeg">
+  <img src="/Assets/img/Alumni/photo-4.jpeg">
+  <img src="/Assets/img/Alumni/photo-3.jpeg">
+  <img src="/Assets/img/Alumni/photo-2.jpeg">
+  <img src="/Assets/img/Alumni/photo-6.jpg">
+</div>
 
-  <p>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quis! Harum non quos beatae quibusdam ea dolores illum, debitis quae placeat, numquam veritatis aspernatur deleniti enim dolorum nesciunt odit quasi temporibus laudantium, dignissimos nisi architecto fugiat! Quas nostrum at vel inventore possimus ducimus, cupiditate doloremque repellendus similique error reiciendis iusto. Ipsa excepturi possimus quae magnam eveniet provident id. Culpa expedita magnam vel totam odit recusandae minima, similique reiciendis vero esse beatae consectetur itaque ad nemo dolor dolorum aspernatur distinctio porro voluptatibus harum exercitationem, eligendi quaerat inventore. Cum doloremque dicta nihil assumenda vero aspernatur dolores, rerum consequatur dolore ad quaerat. Quidem neque ea nihil non porro optio esse qui necessitatibus quasi debitis dolores, enim, dolorem quae, provident illum assumenda vitae! Nam ut veritatis hic! Ad nihil quaerat sint veritatis nostrum repellat atque odio voluptates consectetur veniam ab quos ex architecto, laborum explicabo fugiat! Placeat, sed doloremque blanditiis ipsum asperiores corrupti voluptates.
-  </p>
-
-  <p>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus nesciunt dolore minus praesentium nobis pariatur esse veniam mollitia aut quas blanditiis voluptatem facilis, magnam nisi dicta quisquam debitis quis, ratione quaerat doloremque sapiente ipsam. Rerum ipsam delectus ratione earum exercitationem est quibusdam. Adipisci, quas. Dolorem optio unde totam consequatur sequi sapiente soluta harum reiciendis fugit veniam molestias similique nemo odio explicabo, consectetur accusantium, distinctio dolores doloribus alias repellendus aspernatur inventore et rem porro. Delectus pariatur officia nisi aut odit facere culpa explicabo illo tempora totam optio doloribus rem tempore, autem laudantium commodi quasi, veritatis omnis reprehenderit libero consectetur maxime assumenda inventore? Doloremque magnam consequuntur pariatur. Quasi fugiat eaque laudantium asperiores voluptas rerum quam nulla quae distinctio assumenda animi laboriosam dolore, veniam similique labore consequatur deserunt impedit ducimus quidem sed commodi nemo unde rem vitae! Sunt aut suscipit eaque possimus optio quos, nesciunt vero necessitatibus dolores, exercitationem animi dolorum est!
-  </p>
- </div>
-
- <!-- link for js  -->
- <link rel="stylesheet" href="./index.js">
 </body>
 </html>
 

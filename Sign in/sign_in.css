@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gudea:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Kanit:400,500,600&display=swap');
 
 *{
  padding: 0;
@@ -7,54 +8,97 @@
 }
 
 body{
- display: flex;
- justify-content: center;
- height: 100vh;
- align-items: center;
  font-family: 'Gudea', sans-serif;
- /* background:linear-gradient(to right, white,rgb(111, 112, 114)); */
- background: url("/Assets/img/bg-5.jpg");
- background-size: cover;
+}
+
+nav{
+ font-family: 'Kanit', sans-serif;
+ font-weight: 400;
+ background-color: #fffdf9;
+ color: white;
+}
+
+.navbar-brand{
+ height: 60px;
+}
+
+.nav-item{
+ margin: 0 15px;
+}
+
+.fa-sign-in{
+ padding: 0 10px;
+ color: #fb5b5a;
+}
+
+.nav-link{
+ color: black;
+ display: inline-block;
+}
+
+.active{
+ background-color: #fb5b5a;
+ color: white;
+}
+
+.nav-item:hover,.nav-link:hover,.nav-item:hover .fa-sign-in{
+ background-color: #fb5b5a;
+ color: white;
+}
+
+.nav-button{
+ border-radius: 3px;
+ background-color: #fb5b5a;
+}
+
+.active{
+ border-radius: 3px;
+ background:none;
+ outline: 1px solid #fb5b5a;
+ color: #fb5b5a;
 }
 
 
-.container{
+.cont{
  width:320px;
- height: 400px;
- background-color: #34363e;
- color: white;
+ /* height: 400px; */
+ background-color: white;
+ color: #34363E;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
  border-radius: 3px;
 }
 
-.container h3{
+.cont h3{
  margin-top: 3rem;
- padding: 2rem;
+ padding: 16px;
  font-weight: 400;
 }
 
-.container .username, .container .password{
+.cont .username, .cont .password{
  display: flex;
  /* border: 2px solid rgba(255, 255, 255, 0.2); */
  height: 2.5rem;
  overflow: hidden;
 }
 
-.container i{
+.cont i{
  padding: 10px 25px ;
- background: rgb(75, 76, 82);
  /* background: none; */
  color: #ada8a8;
 }
 
-.container input{
+.cont input{
  width: 100%;
  color: white;
  box-shadow: 1px 1px solid rgba(179, 175, 175, 0.5);
 }
 
-.container input[type = "text"],input[type = "password"]{
- background: rgb(75, 76, 82);
+.cont input[type = "text"],input[type = "password"]{
+ background: white;
  padding: 1.2rem 0;
  /* font-size: 1rem; */
  /* outline: 1px solid white; */
@@ -63,50 +107,54 @@ body{
 }
 
 
-.container button{
+.cont button{
  width: 100px;
  text-align: center;
  height: 30px;
  width: 120px;
  font-weight: 700;
- margin: 2rem 1.4rem 1.5rem 2rem;
+ margin: 2rem 1.4rem 1.5rem 0;
  font-size: 0.9rem;
  border-radius: 20px;
  outline: none;
  background: none;
- border: 1px solid white;
- color: white;
+ border: 1px solid #34363E;
+ color: #34363E;
  text-transform: capitalize;
 }
 
 
-.container button:hover,.container button:focus{
- background-color: white;
- color: #34363E;
+.cont button:hover,.cont button:focus{
+ background-color: #34363E;
+ color: white;
 }
 
-.container a{
+.cont a{
  color: rgb(114, 114, 116);
  font-size: 0.9rem;
 }
 
-.container a:hover, .container a:focus{
+.cont a:hover, .cont a:focus{
  color: rgba(255, 255, 255, 0.4);
 }
 
-.container p{
+.cont p{
  padding: 1rem 2rem 1.7rem 2.2rem;
  font-size: 0.8rem;
  color: rgb(126, 126, 133);
 }
 
-.container .sign-up{
+.cont .sign-up{
  color: white;
 }
 
+.cont .btn .forgotten-pass:hover{
+ color: black;
+}
+
 @media (max-width : 600px){
- .container{
-  width: 100vw;
+ .cont{
+  /* width: 100vw; */
   margin: 1rem;
   height: auto;
  }
