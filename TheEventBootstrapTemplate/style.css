@@ -47,7 +47,7 @@ nav{
  color: white;
 }
 
-.nav-item:hover,.nav-link:hover,.nav-item:hover{
+.nav-item:hover,.nav-link:hover,.nav-item:hover , .nav-item:hover .fa-sign-in{
  background-color: #fb5b5a;
  color: white;
 }
@@ -67,7 +67,7 @@ nav{
 /* Banner  */
 .carousel-caption{
  /* border: 1px solid red; */
- margin-bottom:5em;
+ /* margin-bottom:1em; */
  color: #fb5b5a;
  font-family: 'Alata',monospace;
 }
@@ -526,4 +526,32 @@ footer p{
   left: 10px;
   bottom: 10px;
   z-index: 99;
+}
+
+@media (max-width : 600px){
+  .carousel-inner img{
+  width: 100vw;
+  height: 50vh;
+}
+
+.nav-item .nav-link{
+ /* margin: 0 15px; */
+ display: block;
+ width: 100%;
+ padding: 1rem 1rem;
+}
+
+.fa-sign-in{
+ padding: 10px;
+}
+
+.navbar-header{
+ margin: 0 0 0 2rem;
+ width: 250px;
+}
+
+.navbar-header h2{
+ margin: 0;
+ font-size: 0.9rem;
+}
 }
