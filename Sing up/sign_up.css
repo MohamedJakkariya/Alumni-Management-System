@@ -30,7 +30,7 @@ nav{
  margin: 0 15px;
 }
 
-.fa-sign-in{
+.fa-sign-in,.fa-caret-down{
  padding:10px;
  background: none;
  color: #fb5b5a;
@@ -40,6 +40,12 @@ nav{
  color: black;
  display: inline-block;
 }
+
+.dropdown-item:hover{
+ background-color: #fb5b5a;
+ color: white;
+}
+
 
 .active{
  background-color: #fb5b5a;
@@ -54,6 +60,11 @@ nav{
 .nav-button{
  border-radius: 3px;
  background-color: #fb5b5a;
+}
+
+.nav-item:hover #drop,.nav-item:hover .fa-caret-down{
+ background-color: none;
+ color: white;
 }
 
 h1{
@@ -92,8 +103,9 @@ span{
  border-bottom: 1px solid rgba(248, 231, 231, 0.1);
 }
 
-#personal-info,#account-info{
-  margin: 1rem auto;
+.fa-bars{
+  background:none;
+  border: none;
 }
 
 .cont{
@@ -102,6 +114,7 @@ span{
  background-color: #34363e;
  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
  border-radius: 3px;
+ margin: auto;
 }
 
 .cont .inp{

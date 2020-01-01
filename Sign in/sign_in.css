@@ -28,7 +28,7 @@ nav{
  margin: 0 15px;
 }
 
-.fa-sign-in{
+.fa-sign-in,.fa-caret-down{
  padding: 0 10px;
  color: #fb5b5a;
 }
@@ -51,6 +51,11 @@ nav{
 .nav-button{
  border-radius: 3px;
  background-color: #fb5b5a;
+}
+
+.nav-item:hover #drop,.nav-item:hover .fa-caret-down{
+ background-color: none;
+ color: white;
 }
 
 .active{
@@ -155,6 +160,11 @@ nav{
 
 .cont .sign-up:hover{
  color: #34363E;
+}
+
+.dropdown-item:hover{
+ background-color: #fb5b5a;
+ color: white;
 }
 
 footer{
