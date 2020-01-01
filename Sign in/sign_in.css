@@ -169,7 +169,9 @@ footer{
  .cont{
   width: 100%;
   height: auto;
+  margin-top: 1rem;
  }
+ 
  .nav-item .nav-link{
  /* margin: 0 15px; */
  display: block;
