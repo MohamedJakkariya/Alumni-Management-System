@@ -17,6 +17,7 @@ nav{
  z-index: 100;
  background-color: #fffdf9;
  color: white;
+ box-shadow: 2px 1px 5px rgba(0,0,0,0.5);
 }
 
 .navbar-brand{
@@ -62,6 +63,7 @@ nav{
 
 .cont{
  width:320px;
+ margin-top: 2rem;
  /* height: 400px; */
  background-color: white;
  color: #34363E;
@@ -74,7 +76,7 @@ nav{
 }
 
 .cont h3{
- margin-top: 3rem;
+ margin-top: 1rem;
  padding: 16px;
  font-weight: 400;
 }
