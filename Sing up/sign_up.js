@@ -147,28 +147,28 @@ re_pass_input.addEventListener("focusout",()=>{
 
 
 user_input.addEventListener("focus", () => {
-  user.style.color = "white";
+  user.style.color = "#34363E";
   pass.style.color = "#ada8a8";
   email.style.color = "#ada8a8";
   re_pass.style.color = "#ada8a8";
 });
 
 pass_input.addEventListener("focus", () => {
-  pass.style.color = "white";
+  pass.style.color = "#34363E";
   user.style.color = "#ada8a8";
   email.style.color = "#ada8a8";
   re_pass.style.color = "#ada8a8";
 });
 
 email_input.addEventListener("focus",() => {
-  email.style.color = "white";
+  email.style.color = "#34363E";
   pass.style.color = "#ada8a8";
   user.style.color = "#ada8a8";
   re_pass.style.color = "#ada8a8";
 });
 
 re_pass_input.addEventListener("focus", () => {
-  re_pass.style.color = "white";
+  re_pass.style.color = "#34363E";
   pass.style.color = "#ada8a8";
   user.style.color = "#ada8a8";
   email.style.color = "#ada8a8";

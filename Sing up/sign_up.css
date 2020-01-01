@@ -69,13 +69,13 @@ nav{
 
 h1{
   text-transform: uppercase;
-  color: white;
+  color: #34363E;
   font-size: 1.4rem;
   letter-spacing: 0.5px;
   word-spacing: 3px;
   line-height: 1.4rem;
   padding: 10px 10px;
-  font-weight: 400  ;
+  font-weight: 400;
 }
 
 .indicator{
@@ -91,16 +91,16 @@ h1{
 i{
   color: rgb(146, 145, 145);
   padding: 1rem;
-  background-color: rgb(75, 76, 82);
-  border-bottom: 1px solid rgb(75,76,82);
+  /* background-color: rgb(75, 76, 82); */
+  /* border-bottom: 1px solid rgb(75,76,82); */
 }
 
 
 span{
  color: white;
- background: rgb(75, 76, 82);
+ /* background: rgb(75, 76, 82); */
  padding: .5rem 0.1rem 1rem 0.3rem;
- border-bottom: 1px solid rgba(248, 231, 231, 0.1);
+ /* border-bottom: 1px solid rgba(248, 231, 231, 0.1); */
 }
 
 .fa-bars{
@@ -111,7 +111,7 @@ span{
 .cont{
  width:320px;
  background: transparent;
- background-color: #34363e;
+ /* background-color: #34363e; */
  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
  border-radius: 3px;
  margin: auto;
@@ -121,15 +121,19 @@ span{
   display: flex;
 }
 
+#personal-info{
+  margin-top: 1rem;
+}
+
 .cont input{
- color: rgb(246, 241, 241);
+ color: #34363E;
  width: 100%;
  box-shadow: 1px 1px solid rgba(179, 175, 175, 0.5);
 }
 
 .cont input[type = "text"],input[type = "password"],.cont input[type = "email"],
 .cont input[type = "date"],input[type = "number" ]{
- background: rgb(75, 76, 82);
+ /* background: rgb(75, 76, 82); */
  border: none;
  outline: none;
  padding: 1rem;
@@ -204,7 +208,7 @@ input[type = "date"]::-webkit-inner-spin-button { display: none; }
 
 .skills h3{
   display: block;
-  color: rgba(179, 175, 175, 0.5);
+  color: #34363E;
   padding: 10px;
   font-weight: 400;
 }
@@ -224,7 +228,7 @@ input[type = "date"]::-webkit-inner-spin-button { display: none; }
 }
 
 .skills .skill-select label{
-  color: rgba(179, 175, 175, 0.5);
+  color: rgb(146, 145, 145);
   line-height: 1.6rem;
   /* padding-bottom: 5px; */
   /* border: 1px solid white; */
@@ -246,7 +250,7 @@ overflow-x: hidden;
   margin: auto;
   height: auto;
  }
-  
+
 .nav-item .nav-link{
  /* margin: 0 15px; */
  display: block;
@@ -273,4 +277,4 @@ overflow-x: hidden;
  margin: 0;
  font-size: 0.9rem;
 }
-} 
+}
