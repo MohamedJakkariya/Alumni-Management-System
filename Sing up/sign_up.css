@@ -7,11 +7,53 @@
 }
 
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
  font-family: 'Gudea', sans-serif;
- background: #b2dffb
+ /* background: #b2dffb */
+}
+
+nav{
+ background-color: #fffdf9;
+ color: white;
+ margin-bottom: 3rem;
+}
+
+
+.navbar-brand{
+ height: 60px;
+}
+
+.active{
+ border-radius: 3px;
+}
+
+.nav-item{
+ margin: 0 15px;
+}
+
+.fa-sign-in{
+ padding:10px;
+ background: none;
+ color: #fb5b5a;
+}
+
+.nav-link{
+ color: black;
+ display: inline-block;
+}
+
+.active{
+ background-color: #fb5b5a;
+ color: white;
+}
+
+.nav-item:hover,.nav-link:hover,.nav-item:hover .fa-sign-in{
+ background-color: #fb5b5a;
+ color: white;
+}
+
+.nav-button{
+ border-radius: 3px;
+ background-color: #fb5b5a;
 }
 
 h1{
@@ -53,7 +95,8 @@ span{
 #personal-info,#account-info{
   margin: 1rem auto;
 }
-.container{
+
+.cont{
  width:320px;
  background: transparent;
  background-color: #34363e;
@@ -61,18 +104,18 @@ span{
  border-radius: 3px;
 }
 
-.container .inp{
+.cont .inp{
   display: flex;
 }
 
-.container input{
+.cont input{
  color: rgb(246, 241, 241);
  width: 100%;
  box-shadow: 1px 1px solid rgba(179, 175, 175, 0.5);
 }
 
-.container input[type = "text"],input[type = "password"],.container input[type = "email"],
-.container input[type = "date"],input[type = "number" ]{
+.cont input[type = "text"],input[type = "password"],.cont input[type = "email"],
+.cont input[type = "date"],input[type = "number" ]{
  background: rgb(75, 76, 82);
  border: none;
  outline: none;
@@ -89,11 +132,11 @@ input[type = "date"]::-webkit-clear-button{
   display: none;
 }
 
-.container input[type = "date"]{
+.cont input[type = "date"]{
  color: rgba(253, 252, 252, 0.74);
 }
 
-.container input[type="date"]::-webkit-calendar-picker-indicator {
+.cont input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 15px;
   color: white;
   background-color: #34363E;
@@ -108,7 +151,7 @@ input[type = "date"]::-webkit-inner-spin-button { display: none; }
 /* ::-webkit-datetime-edit-day-field { text-transform: uppercase; } */
 /* ::-webkit-datetime-edit-year-field { text-transform: uppercase; } */
 
-.container button{
+.cont button{
  width: 100px;
  text-align: center;
  cursor: pointer;
@@ -128,89 +171,10 @@ input[type = "date"]::-webkit-inner-spin-button { display: none; }
  text-transform: capitalize;
 }
 
-.container button:hover,.container button:focus{
+.cont button:hover,.cont button:focus{
  background-color: white;
  color: #34363e;
 }
-
- .progressbar{
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  height: 50px;
-  transform: translate(-50%,20%);
-  display: flex;
-  background: transparent;
- }
-
- .progressbar span::before,span::after{
-  padding-top: 5px;
- }
-
- .first,.second{
-  position: relative;
-  height: 5px;
-  display: block;
-  left: 30%;
-  top: 20%;
-  transform: translate(-65%,-50%);
-  padding-left:1.8rem;
-  padding-bottom: 1.4rem;
-  width: 150px;
-  font-size: 1rem;
-  margin-bottom: 2.7rem;
-  line-height: 1.2rem;
-  /* text-transform: uppercase; */
-  /* background: #27AE60; */
-  background: #34363e;
-  z-index: 1;
- }
-
- .first::before,.second::before{
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 26px;
-  left: 0;
-  top: 0.6rem;
-  z-index: 1;
-  color: #34363E;
-  background: white;
-  text-align: center;
-  margin-top:-10px ;
- }
-
- .first::before{
-  content: '1';
-  left: -10px;
- }
-
- .second::before{
-  content: '2';
-  left: -10px;
- }
-
- .first{
-   padding-left: 1.5rem;
- }
-
- .second::after{
-  text-align: center;
-
-  content: '3';
-  position: absolute;
-  width: 25px;
-  right: -20px;
-  height: 26px;
-  color: #34363E;
-  top: 0.6rem;
-  background: white;
-  margin-top:-10px ;
- }
- .first.fill-1, .first.fill-1::before,.second.fill-2, .second.fill-2::before{
-  background: #27AE60;
-  color: white;
- }
 
  a{
    color: white;
@@ -262,11 +226,38 @@ input[type = "date"]::-webkit-inner-spin-button { display: none; }
 }
 
 @media (max-width : 600px){
- .container{
+ .cont{
   width: 90vw;
 overflow-x: hidden;
 
   margin: auto;
   height: auto;
  }
+  
+.nav-item .nav-link{
+ /* margin: 0 15px; */
+ display: block;
+ width: 100%;
+ padding: 1rem 1rem;
+}
+
+.fa-sign-in{
+ padding: 10px;
+}
+
+.fa-bars{
+  /* padding-left: 0; */
+  background:none;
+  border:none;
+}
+
+.navbar-header{
+ /* margin: 0 0 0 2rem; */
+ width: 240px;
+}
+
+.navbar-header h2{
+ margin: 0;
+ font-size: 0.9rem;
+}
 } 
