@@ -149,11 +149,12 @@ nav{
 }
 
 .cont .sign-up{
- color: white;
+ color: rgb(126, 126, 133);
+ text-decoration: underline;
 }
 
-.cont .btn .forgotten-pass:hover{
- color: black;
+.cont .sign-up:hover{
+ color: #34363E;
 }
 
 footer{
