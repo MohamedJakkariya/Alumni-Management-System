@@ -49,7 +49,7 @@ nav{
  color: white;
 }
 
-.nav-item:hover,.nav-link:hover,.nav-item:hover{
+.nav-item:hover,.nav-link:hover,.nav-item:hover,.nav-item:hover .fa-sign-in{
  background-color: #fb5b5a;
  color: white;
 }
