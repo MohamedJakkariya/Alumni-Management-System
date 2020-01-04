@@ -49,7 +49,7 @@ nav{
  color: white;
 }
 
-.nav-item:hover,.nav-link:hover,.nav-item:hover,.nav-item:hover .fa-sign-in{
+.nav-item:hover,.nav-link:hover,.nav-item:hover{
  background-color: #fb5b5a;
  color: white;
 }
@@ -59,6 +59,9 @@ nav{
  color: white;
 }
 
+.nav-item:hover .fa-sign-in{
+ color: white;
+}
 
 .nav-button{
  border-radius: 3px;
